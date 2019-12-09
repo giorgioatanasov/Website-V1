@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html Long = "en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width", initial-scale=1.8>
+      <meta http-equiv="X-UA-Compatible" content ="ie=edge">
+      <link rel="stylesheet" href="style.css">
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+      <link rel="icon" href="./Images/GiorgioLogo.png">
+      <title>Giorgio Atanasov | Software Engineer</title>
+   </head>
+   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+   <body>
+      <nav>
+         <div class = "logo">
+            <h4><img src="./Images/GiorgioLogo.png" class="giorgioLogo"></img></h4>
+         </div>
+         <ul class = "nav_links">
+            <li> <a href="#">Home</a>
+            </li>
+            <li onclick="location.href='mailto:giorgioatanasov34@yahoo.com';"><a href="#">Contact</a>
+            </li>
+            <li><a href="./Resume/GiorgioAtanasovResume.pdf" target="_blank">Resume</a>
+            </li>
+         </ul>
+         <div class = "burger">
+            <div class = "line1"></div>
+            <div class = "line2"></div>
+            <div class = "line3"></div>
+         </div>
+      </nav>
+      <div class="OK">
+         <h1 class = "greating"> 
+            Hi, my name is
+         </h1>
+         <h2 class = "name">
+            Giorgio Atanasov
+         </h2>
+         <h3 class = "build">
+            I build web applications.
+         </h3>
+         <h3 class = "intro">
+            I'm a software engineer based in Fremont, CA specializing in artificial intelligence while creating high-quality applications through back-end coding.
+         </h3>
+         <button id ="in-touch" onclick="location.href='mailto:giorgioatanasov34@yahoo.com';">
+         Get In Touch
+         </button>
+      </div>
+      <div class = "Content">
+         <ul class = "listStyle">
+            <li class = "AboutCover">
+               <span class = "listTitle"> About Me</span>
+               <div class="container">
+                  <a href="https://github.com/Giorgioatanasov" target="_blank">
+                     <figure class="profile"><img src="./Images/GiorgioPhoto.png" /></figure>
+                  </a>
+                  <h1 class = "firstAbout">
+                     Hello! I'm Giorgio, a software engineer based in Fremont, CA who loves to build applications that live on the internet. I create applications through the use of back-end coding to provide intuitive and effortless user interfaces with efficient run-times.
+                  </h1>
+                  <h2 class = "secondAbout">
+                     I am currently a third-year computer science major at the <span class = "highlight"> University of California, Irvine. </span> I was apart of the engineering team at <span class = "highlight">Prifina</span> where I worked on back-end applications that deal with AWS Serverless as well as a variety of interesting and meaningful projects on a daily.
+                  </h2>
+               </div>
+            </li>
+            <li class = "workExperience" id = "noBottomMargin">
+               <span class = "listTitle"> Where I've Worked</span>
+            </li>
+         </ul>
+         <div class = "wrapper">
+            <div class="tab">
+               <button class="tablinks" id = "first" onclick="openCity(event, 'Prifina')">Prifina</button>
+               <button class="tablinks" onclick="openCity(event, 'CoderSchool')">CoderSchool</button>
+               <button class="tablinks" onclick="openCity(event, 'ICS Student Council')">ICS Student Council</button>
+            </div>
+            <div id="Prifina" class="tabcontent">
+               <h3 class = "jobTitle">Software Engineer Intern <span class = "highlight">@ Prifina</span></h3>
+               <h4 class = "dates">Jun. 2019 - Sept. 2019</h4>
+               <ul>
+                  <li>Worked with AWS Serverless services such as API Gateway, Lambda, S3 to implement functions
+                     where users could file share through use of NodeJS.
+                  </li>
+                  <li>
+                     Documented how and why API functions and Lambda functions are done in AWS Serverless
+                     architecture environment, utilizing general practices logic of serverless .com framework.
+                  </li>
+               </ul>
+            </div>
+            <div id="CoderSchool" class="tabcontent">
+               <h3 class = "jobTitle">Software Engineer Instructor</h3>
+               <h4 class = "dates">Jun. 2019 - Sept. 2019</h4>
+               <ul>
+                  <li>Held Python, Javascript, and HTML workshops for kids from ages 8 to 16. Integrated programming
+                     platforms such as Scratch, Repl, and Pygame.
+                  </li>
+                  <li>Helped increase students’ development skills such as teamwork, creativity, and presentation skills.</li>
+               </ul>
+            </div>
+            <div id="ICS Student Council" class="tabcontent">
+               <h3 class="jobTitle">Executive Board of Corporate Outreach</h3>
+               <h4 class="dates">Jan. 2019 - Present</h4>
+               <ul>
+                  <li>Improved student life at the Donald Bren School of Information and Computer Science academically, professionally, and socially by collaborating with large technology companies to host information workshops and sessions.</li>
+                  <li>Promoted important events through different social media platforms and presentations.</li>
+               </ul>
+            </div>
+         </div>
+         
+         <ol start="3" class="projects" >
+         <li>
+               <span class="listTitle"> UCI SubLeasing Project</span>
+               <div class="projInfo">
+                  <img class="projImage" src="./Images/OnTheHouse.png"></img>
+                  <div>
+                     <h1 class = "featureProj">Featured Project</h1>
+                     <h2 class = "projName">UCI Housing</h2>
+                     <p class="projDescription">Implemented a website that allows University of California, Irvine students to post their subleasing properties.</p>
+                     <pre><p class="projComponents"> ReactJS   Javascript   Custom API</p></pre>
+                  </div>
+                  <div>
+                  </div>
+               </div>
+               <div class="projIcons">
+                  <a href="https://github.com/onthehouse117/On-The-House-Front-End" target="_blank"> <i class="fa fa-github" id="specificIcons"></i></a>
+                  <a href="https://onthehouse-190cb.firebaseapp.com/" target="_blank"> <i class="fa fa-external-link" id="specificIcons"></i></a>
+               </div>
+               <div>
+               </div>
+            </li>
+            <li>
+               <span class="listTitle"> Featured Project</span>
+               <div class="projInfo">
+                  <img class="projImage" src="./Images/ToolsforSpotify.png"></img>
+                  <div>
+                     <h1 class = "featureProj">Featured Project</h1>
+                     <h2 class = "projName">Spotify App</h2>
+                     <p class="projDescription">Added functionality to be able to delete multiple songs from a Spotfiy playlist at once. Includes a sleek playlist table to display all songs in selected playlist.</p>
+                     <pre><p class="projComponents"> React   Node.js   Spotify Web API</p></pre>
+                  </div>
+                  <div>
+                  </div>
+               </div>
+               <div class="projIcons">
+                  <a href="https://github.com/Giorgioatanasov/ToolsforSpotify" target="_blank"> <i class="fa fa-github" id="specificIcons"></i></a>
+                  <a href="https://toolsforspotify.netlify.com/" target="_blank"> <i class="fa fa-external-link" id="specificIcons"></i></a>
+               </div>
+               <div>
+               </div>
+            </li>
+
+      </div>
+      
+
+
+      
+      </ol>
+      <ol start="5" class="projects" >
+         <li><span class="listTitle">Other Projects</li>
+         </span>
+      </ol>
+      <section id="pattern" class="pattern">
+         <ul class="grid">
+            <li>
+               <div>
+                  <img class = "folder" draggable="false" src="./Images/folder.png" />
+                  <a href="https://github.com/Giorgioatanasov/ToolsforSpotify" class="tableGithub" target="_blank"><i class="fa fa-github" id="githubCss"></i></a>
+                  <p1 class = "info">Personal Website V1</p1>
+                  <p2 class = "description">First version of personal website built with Javascript, html, and css and hosted on Github.</p2>
+                  <pre><p3 class = 'components'>HTML     Javascript</p3></pre>
+               </div>
+            </li>
+
+            <li>
+               <div>
+                  <img class = "folder" draggable="false" src="./Images/folder.png" />
+                  <a href="https://github.com/onthehouse117/On-The-House-API" class="tableGithub" target="_blank"><i class="fa fa-github" id="githubCss"></i></a>
+                  <p1 class = "info">UCI Subleasing Backend</p1>
+                  <p2 class = "description">Website that allows University of California, Irvine students to post their subleasing properties.</p2>
+                  <pre><p3 class = 'components'>Javascript    MongoDB</p3></pre>
+               </div>
+
+         </ul>
+      </section>
+      <div class="containerTouch" id="specificID">
+         <i class="fas fa-external-link-alt"></i>
+         <ol start="5" class="getInTouch">
+            <li>What's Next?</li>
+         </ol>
+         <h1 class="touchHeader">Get In Touch</h1>
+         <h2 class="touchInfo">I am currently looking for internship opportunities for summer of 2020. My inbox is always open as I am very responsive. I look forward to hearing from you!</h2>
+         <button id ="in-touch2" onclick="location.href='mailto:giorgioatanasov34@yahoo.com';">
+         Say Hello!
+         </button>
+      </div>
+      <footer class="left-footer">
+         <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/giorgio-atanasov-696a8213a/" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Giorgioatanasov" target="_blank" class="social-icon"> <i class="fa fa-github"></i></a></li>
+         </ul>
+         <div class="vl"></div>
+      </footer>
+      <footer class="right-footer">
+         <h1 class="tester" onclick="location.href='mailto:giorgioatanasov34@yahoo.com';">giorgioatanasov34@yahoo.com</h1>
+         <div class="v2"></div>
+      </footer>
+      <script src="app.js"> </script>
+   </body>
+</html>
